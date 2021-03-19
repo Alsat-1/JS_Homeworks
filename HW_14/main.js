@@ -211,11 +211,11 @@ const unsplit3 = arr => {
 	}, [])
 	return newArr;
 }
-console.log(unsplit2([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14], [15, 16, 17]]));
+console.log(unsplit3([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14], [15, 16, 17]]));
 
 const unsplit4 = new Function('arr', `let newArr = arr.reduce((acc, el) => {
 	acc.push(...el);
 	return acc;
 }, [])
 return newArr;`);
-console.log(unsplit2([[1, 2, 3, 4], [5, 6, 7, 8]]));
+console.log(unsplit4([[1, 2, 3, 4], [5, 6, 7, 8]]));
