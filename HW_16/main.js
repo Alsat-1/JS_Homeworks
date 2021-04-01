@@ -121,7 +121,7 @@ class CustomString {
 	};
 
 	ucFirst(str) {
-		return str[0].toUpperCase() + str.slice(1);
+		return str[0].toUpperCase() + str.slice(1).toLowerCase();
 	};
 
 
@@ -132,7 +132,7 @@ class CustomString {
 				newStr += str[i].toUpperCase();
 			}
 			else {
-				newStr += str[i];
+				newStr += str[i].toLowerCase();
 			}
 		}
 		return newStr;
